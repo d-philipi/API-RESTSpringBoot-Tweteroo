@@ -13,8 +13,8 @@ public class PersonService {
     @Autowired
     private PersonRepository repository;
 
-    public Person save(PersonDTO dto){
-        return repository.save(new Person(dto));
+    public void save(PersonDTO dto){
+        repository.save(new Person(dto));
     }
     
 }
